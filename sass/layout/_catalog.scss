@@ -1,0 +1,311 @@
+.section-catalog {
+  max-height: 540px;
+  padding: 0 150px;
+  background-color: $color-white;
+
+  max-width: 1920px;
+  margin-bottom: 80px;
+
+  .heading {
+    text-align: center;
+    height: 47px;
+    // width: 470px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 47px;
+
+    margin: 80px 0 60px 0;
+  }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px;
+
+
+    li {
+      list-style-type: none;
+      position: relative;
+
+
+      a {
+        text-decoration: none;
+
+        height: 20px;
+        width: 85px;
+        color: #929AAD;
+        font-family: Montserrat;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 20px;
+
+        &:hover {
+          color: $color-dark-text;
+        }
+      }
+
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: -8px;
+        bottom: -12px;
+        width: 0%;
+        background: $color-red;
+        transition: width .2s;
+      }
+
+      &:hover::after {
+        width: 100%;
+        padding: 0 8px;
+        color: $color-dark-text;
+      }
+    }
+  }
+
+  .all-cars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px;
+
+    .one-by-one {
+      box-sizing: border-box;
+      height: 400px;
+      width: 263px;
+      border: 1px solid #F3F3F5;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+      box-shadow: 0 15px 25px -20px rgba(0, 0, 0, 0.1);
+
+      &:hover {
+        transform: translateY(-2px) scale(1.03);
+        border: 1px solid $color-red;
+        transition: all .2s;
+      }
+
+      .photo {
+        margin-top: 20px;
+        background-image: url(/Assets/Product-Images/product-card-audi-q3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100px;
+
+        &_1 {
+          background-image: url(/Assets/Product-Images/product-card-audi-a4.png);
+        }
+
+        &_2 {
+          background-image: url(/Assets/Product-Images/product-card-audi-a3.png);
+        }
+
+        &_3 {
+          background-image: url(/Assets/Product-Images/product-card-audi-q7.png);
+        }
+      }
+
+
+      .seats {
+        height: 18px;
+        // width: 111px;
+        color: #929AAD;
+        font-family: Montserrat;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 18px;
+
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .car-name {
+        height: 30px;
+        // width: 140px;
+        color: $color-dark-text;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 30px;
+
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .configurator {
+        height: 20px;
+        // width: 72px;
+        color: #2A6EFA;
+        font-family: Montserrat;
+        font-size: 12px;
+        letter-spacing: -0.5px;
+        line-height: 20px;
+
+        margin-bottom: 15px;
+        text-align: center;
+      }
+
+      .check-and-text {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 90px;
+        // width: 138px;
+        color: #929AAD;
+        font-family: Montserrat;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 30px;
+
+        p {
+          .icon-basic-star {
+            margin-right: 9px;
+            color: #2A6EFA;
+          }
+        }
+      }
+
+      .bottom {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        button {
+          border: none;
+          height: 34px;
+          width: 80px;
+          border-radius: 17px;
+          background-color: rgba(250, 42, 42, 0.1);
+          color: #FA2A2A;
+          font-family: "Roboto Condensed";
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 16px;
+        }
+
+      }
+
+      .wrapper {
+
+        .starting {
+          height: 13px;
+          width: 68px;
+          color: #929AAD;
+          font-family: "Roboto Condensed";
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 13px;
+
+          margin-bottom: 2px;
+        }
+
+        .price {
+          height: 30px;
+          width: 92px;
+          color: #212121;
+          font-family: Montserrat;
+          font-size: 20px;
+          font-weight: bold;
+          letter-spacing: 0;
+          line-height: 30px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .section-catalog {
+    padding: 0 70px;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+
+  .section-catalog {
+    max-height: none;
+
+    .navigation {
+      gap: 40px;
+    }
+
+    .heading {
+      font-size: 32px;
+      margin: 70px 0 50px 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 263px 263px;
+      grid-row: auto auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 750px) {
+
+  .section-catalog {
+    padding: 0px 20px;
+
+    .navigation {
+      gap: 20px;
+    }
+
+    .heading {
+      font-size: 26px;
+    }
+  }
+}
+
+@media only screen and (max-width: 580px) {
+
+  .section-catalog {
+
+    .navigation {
+      li {
+        a {
+          font-size: 12px;
+        }
+      }
+
+      gap: 20px;
+      display: grid;
+      grid-template-columns: 90px 90px 90px;
+      justify-items: center;
+    }
+
+    .heading {
+      font-size: 22px;
+      margin: 70px 0 50px 0;
+    }
+
+    .four-col {
+      display: grid;
+      grid-template-columns: 263px;
+      grid-row: auto auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 490px) {
+
+  .section-catalog {
+    .heading {
+      font-size: 16px;
+      margin: 50px 0 50px 0;
+    }
+  }
+}

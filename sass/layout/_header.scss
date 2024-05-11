@@ -1,0 +1,347 @@
+.header {
+  // width: 1440px;
+  height: 95vh;
+  background-image: url(../Assets/Images/header-img-1920.jpg);
+  background-size: cover;
+  background-position: top;
+
+  position: relative;
+
+  // ovo mozda 
+  // width: 1440px;
+  // padding: 0 150px;
+
+  max-width: 1920px;
+
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 40px;
+    padding-top: 32px;
+    transform: translateY(50%);
+    height: 51px;
+    gap: 50px;
+
+    li {
+      list-style-type: none;
+      opacity: 0.5;
+      position: relative;
+
+      a {
+        text-decoration: none;
+
+        height: 16px;
+        width: 70px;
+        // opacity: 0.5;
+        color: $color-white;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 16px;
+
+        button {
+          color: $color-white;
+          opacity: 1;
+          border-radius: 3px;
+
+          &:hover {
+            background-color: $color-red;
+          }
+        }
+
+      }
+
+      &:last-child {
+        a {
+          button:hover {
+            background-color: $color-red;
+            transition: all .2s;
+          }
+        }
+
+        opacity: 1;
+        color: $color-white;
+        background-color: $color-light-text;
+        border-radius: 3px;
+
+      }
+
+      &:last-child:hover {
+        background-color: $color-red;
+
+      }
+
+
+      &:link,
+      &:visited {
+        opacity: 1;
+      }
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active::after {
+        opacity: 1;
+
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: -8px;
+        bottom: -17px;
+        width: 0%;
+        background: $color-red;
+        transition: width .2s;
+      }
+
+      &:hover::after {
+        width: 100%;
+        padding: 0 8px;
+      }
+
+      &:last-child {
+        a {
+          border-radius: 3px;
+          // opacity: 0.2;
+          // background-color: #FFFFFF;
+
+          button {
+            height: 50px;
+            width: 145px;
+            color: $color-white;
+            opacity: 1;
+            background-color: $color-light-text;
+            border: none;
+            border-radius: 3px;
+          }
+        }
+
+        &::after {
+          width: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  .logo-box {
+    position: absolute;
+    top: 53px;
+    left: 40px;
+
+    .logo {
+      height: 30px;
+      width: 93px;
+    }
+  }
+
+  .hedings {
+    position: absolute;
+    left: 160px;
+    top: 240px;
+
+    .arrival {
+      height: 14px;
+      // width: 122px;
+      color: $color-red;
+      font-family: "Roboto Condensed";
+      font-size: 12px;
+      letter-spacing: 5px;
+      line-height: 14px;
+    }
+
+    .expectations {
+      height: 174px;
+      width: 457px;
+      color: $color-white;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 58px;
+    }
+
+    .audi-offers {
+      margin-top: 40px;
+      margin-left: 49.5px;
+      height: 78px;
+      width: 310px;
+      color: #CCC5C5;
+      font-family: Montserrat;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 26px;
+
+    }
+
+    .vertical {
+      box-sizing: border-box;
+      height: 61px;
+      width: 1px;
+      border: 1px solid $color-red;
+      display: block;
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 19.5px;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .header {
+    .navigation {
+      gap: 30px;
+    }
+
+    .hedings {
+      left: 80px;
+
+      .expectations {
+        font-size: 44px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .header {
+    .navigation {
+      gap: 15px;
+      margin-right: 20px;
+
+      li {
+        a {
+          font-size: 12px;
+        }
+
+        &:last-child {
+          a {
+            font-size: 12px;
+
+            button {
+              height: 40px;
+              width: 120px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+
+    .hedings {
+      left: 80px;
+
+      .expectations {
+        font-size: 44px;
+        width: 357px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .header {
+    .logo-box {
+      left: 20px;
+      scale: .8;
+
+    }
+
+    .hedings {
+      .audi-offers {
+        width: 240px;
+        margin-left: 30px;
+      }
+    }
+
+    .navigation {
+      gap: 10px;
+      margin-right: 10px;
+
+      li {
+        a {
+          font-size: 10px;
+        }
+
+        &:last-child {
+          a {
+            font-size: 10px;
+
+            button {
+              height: 30px;
+              width: 100px;
+              font-size: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .hedings {
+      left: 40px;
+
+      .expectations {
+        font-size: 32px;
+        width: 320px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header {
+    .navigation {
+      justify-content: center;
+      gap: 20px;
+
+    }
+
+    .logo-box {
+      left: 20px;
+      top: 10px;
+      scale: .8;
+
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .header {
+    .navigation {
+      justify-content: center;
+      gap: 10px;
+
+    }
+
+    .logo-box {
+      left: 20px;
+      top: 10px;
+      scale: .8;
+
+    }
+
+    .hedings {
+      left: 20px;
+
+      .expectations {
+        font-size: 22px;
+        width: 220px;
+      }
+    }
+  }
+}
+
+// @media only screen and (max-width: 1080px) {
+//   .header {
+//     // width: 1440px;
+//     height: 50vh;
+//     background-image: url(../Assets/Images/header-img-1920.jpg);
+//     background-size: cover;
+//     background-position: top;
+//   }
+// }

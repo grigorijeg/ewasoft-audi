@@ -1,0 +1,304 @@
+.section-about {
+  height: 95vh;
+  // width: 1440px;
+  max-width: 1920px;
+  // padding: 0 150px;
+  background-color: $color-white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  padding: 0 60px;
+
+  .left-part {
+    position: relative;
+
+    .square {
+      height: 520px;
+      width: 359px;
+      background-color: $color-dark-text;
+      position: absolute;
+      left: 247px;
+      top: 120px;
+      transform: translate(-50%, -50%);
+
+      .text-on-square {
+        position: absolute;
+        bottom: 30px;
+        left: 30px;
+
+        p {
+          height: 25px;
+          width: 285px;
+          opacity: 0.5;
+          color: $color-white;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: italic;
+          letter-spacing: 0;
+          line-height: 25px;
+        }
+      }
+    }
+
+
+    .car {
+      background-image: url(/Assets/Images/about-us-section.png);
+      background-size: cover;
+      background-position: top;
+      max-height: 270px;
+      max-width: 552px;
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .right-part {
+    max-height: 395px;
+    max-width: 458px;
+
+    .about {
+      height: 14px;
+      color: $color-red;
+      font-family: "Roboto Condensed";
+      font-size: 12px;
+      letter-spacing: 5px;
+      line-height: 14px;
+      margin-bottom: 15px;
+    }
+
+    .welcome {
+      // height: 141px;
+      // width: 458px;
+      color: $color-dark-text;
+      font-family: Montserrat;
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 47px;
+      margin-bottom: 40px;
+    }
+
+    .with {
+      // height: 90px;
+      // width: 458px;
+      color: $color-dark-text;
+      font-family: Montserrat;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-bottom: 20px;
+    }
+
+    .radiator {
+      // height: 75px;
+      // width: 458px;
+      color: $color-light-text;
+      font-family: Montserrat;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 1120px) {
+  .section-about {
+    height: 70vh;
+    gap: 30px;
+
+    .left-part {
+      .square {
+        height: 400px;
+        width: 255px;
+        left: 175px;
+        top: 100px;
+
+        .text-on-square {
+          left: 3px;
+          text-align: center;
+
+          p {
+            width: auto;
+          }
+        }
+      }
+
+      .car {
+        max-height: 190px;
+      }
+    }
+
+    .right-part {
+      max-height: 395px;
+      max-width: 458px;
+
+      .about {
+        height: 12px;
+        font-size: 10px;
+        letter-spacing: 4px;
+        line-height: 12px;
+        margin-bottom: 13px;
+      }
+
+      .welcome {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 38px;
+      }
+
+      .with {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 18px;
+      }
+
+      .radiator {
+        font-size: 14px;
+        line-height: 23px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 870px) {
+
+  .section-about {
+
+    padding: 0 30px;
+
+    .right-part {
+      max-height: 395px;
+      max-width: 458px;
+
+      .about {
+        height: 12px;
+        font-size: 11px;
+        letter-spacing: 4px;
+        line-height: 12px;
+        margin-bottom: 10px;
+      }
+
+      .welcome {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px;
+      }
+
+      .with {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 12px;
+      }
+
+      .radiator {
+        font-size: 11px;
+        line-height: 18px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .section-about {
+    padding: 0 20px;
+    gap: 5px;
+
+    .left-part {
+      .car {
+        max-height: 160px;
+      }
+    }
+
+    .right-part {
+      .welcome {
+        font-size: 20px;
+        line-height: 34px;
+        margin-bottom: 26px;
+      }
+
+      .with {
+        font-size: 12px;
+        line-height: 19px;
+        margin-bottom: 10px;
+      }
+
+      .radiator {
+        font-size: 10px;
+        line-height: 16px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .section-about {
+    padding: 0 2px;
+    gap: 2px;
+
+    .left-part {
+      .car {
+        max-height: 120px;
+      }
+
+      .square {
+        height: 350px;
+        width: 200px;
+        left: 120px;
+        top: 60px;
+      }
+    }
+
+    .right-part {
+      .welcome {
+        font-size: 14px;
+        line-height: 28px;
+        margin-bottom: 26px;
+      }
+
+      .with {
+        font-size: 9px;
+        line-height: 12px;
+        margin-bottom: 8px;
+      }
+
+      .radiator {
+        font-size: 8px;
+        line-height: 12px;
+      }
+
+    }
+  }
+}
+
+@media only screen and (max-width: 360px) {
+
+  .section-about {
+    .right-part {
+      .about {
+        height: 10px;
+        font-size: 8px;
+        letter-spacing: 2px;
+        line-height: 10px;
+      }
+
+      .welcome {
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 20px;
+      }
+
+      .with {
+        font-size: 7px;
+        line-height: 10px;
+        margin-bottom: 8px;
+      }
+
+      .radiator {
+        font-size: 6px;
+        line-height: 12px;
+      }
+    }
+  }
+}

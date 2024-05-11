@@ -1,0 +1,937 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Montserrat", "Roboto Condensed", sans-serif; }
+
+.header {
+  height: 95vh;
+  background-image: url(../Assets/Images/header-img-1920.jpg);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  max-width: 1920px; }
+  .header .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-right: 40px;
+    padding-top: 32px;
+    transform: translateY(50%);
+    height: 51px;
+    gap: 50px; }
+    .header .navigation li {
+      list-style-type: none;
+      opacity: 0.5;
+      position: relative; }
+      .header .navigation li a {
+        text-decoration: none;
+        height: 16px;
+        width: 70px;
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        letter-spacing: 1px;
+        line-height: 16px; }
+        .header .navigation li a button {
+          color: #fff;
+          opacity: 1;
+          border-radius: 3px; }
+          .header .navigation li a button:hover {
+            background-color: #FA2A2A; }
+      .header .navigation li:last-child {
+        opacity: 1;
+        color: #fff;
+        background-color: #4E4E4E;
+        border-radius: 3px; }
+        .header .navigation li:last-child a button:hover {
+          background-color: #FA2A2A;
+          transition: all .2s; }
+      .header .navigation li:last-child:hover {
+        background-color: #FA2A2A; }
+      .header .navigation li:link, .header .navigation li:visited {
+        opacity: 1; }
+      .header .navigation li:hover {
+        opacity: 1; }
+      .header .navigation li:active::after {
+        opacity: 1; }
+      .header .navigation li::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: -8px;
+        bottom: -17px;
+        width: 0%;
+        background: #FA2A2A;
+        transition: width .2s; }
+      .header .navigation li:hover::after {
+        width: 100%;
+        padding: 0 8px; }
+      .header .navigation li:last-child a {
+        border-radius: 3px; }
+        .header .navigation li:last-child a button {
+          height: 50px;
+          width: 145px;
+          color: #fff;
+          opacity: 1;
+          background-color: #4E4E4E;
+          border: none;
+          border-radius: 3px; }
+      .header .navigation li:last-child::after {
+        width: 0;
+        padding: 0; }
+  .header .logo-box {
+    position: absolute;
+    top: 53px;
+    left: 40px; }
+    .header .logo-box .logo {
+      height: 30px;
+      width: 93px; }
+  .header .hedings {
+    position: absolute;
+    left: 160px;
+    top: 240px; }
+    .header .hedings .arrival {
+      height: 14px;
+      color: #FA2A2A;
+      font-family: "Roboto Condensed";
+      font-size: 12px;
+      letter-spacing: 5px;
+      line-height: 14px; }
+    .header .hedings .expectations {
+      height: 174px;
+      width: 457px;
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 48px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 58px; }
+    .header .hedings .audi-offers {
+      margin-top: 40px;
+      margin-left: 49.5px;
+      height: 78px;
+      width: 310px;
+      color: #CCC5C5;
+      font-family: Montserrat;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 26px; }
+    .header .hedings .vertical {
+      box-sizing: border-box;
+      height: 61px;
+      width: 1px;
+      border: 1px solid #FA2A2A;
+      display: block;
+      position: absolute;
+      margin-top: 50px;
+      margin-left: 19.5px; }
+
+@media only screen and (max-width: 900px) {
+  .header .navigation {
+    gap: 30px; }
+  .header .hedings {
+    left: 80px; }
+    .header .hedings .expectations {
+      font-size: 44px; } }
+
+@media only screen and (max-width: 700px) {
+  .header .navigation {
+    gap: 15px;
+    margin-right: 20px; }
+    .header .navigation li a {
+      font-size: 12px; }
+    .header .navigation li:last-child a {
+      font-size: 12px; }
+      .header .navigation li:last-child a button {
+        height: 40px;
+        width: 120px;
+        font-size: 12px; }
+  .header .hedings {
+    left: 80px; }
+    .header .hedings .expectations {
+      font-size: 44px;
+      width: 357px; } }
+
+@media only screen and (max-width: 560px) {
+  .header .logo-box {
+    left: 20px;
+    scale: .8; }
+  .header .hedings .audi-offers {
+    width: 240px;
+    margin-left: 30px; }
+  .header .navigation {
+    gap: 10px;
+    margin-right: 10px; }
+    .header .navigation li a {
+      font-size: 10px; }
+    .header .navigation li:last-child a {
+      font-size: 10px; }
+      .header .navigation li:last-child a button {
+        height: 30px;
+        width: 100px;
+        font-size: 10px; }
+  .header .hedings {
+    left: 40px; }
+    .header .hedings .expectations {
+      font-size: 32px;
+      width: 320px; } }
+
+@media only screen and (max-width: 480px) {
+  .header .navigation {
+    justify-content: center;
+    gap: 20px; }
+  .header .logo-box {
+    left: 20px;
+    top: 10px;
+    scale: .8; } }
+
+@media only screen and (max-width: 360px) {
+  .header .navigation {
+    justify-content: center;
+    gap: 10px; }
+  .header .logo-box {
+    left: 20px;
+    top: 10px;
+    scale: .8; }
+  .header .hedings {
+    left: 20px; }
+    .header .hedings .expectations {
+      font-size: 22px;
+      width: 220px; } }
+
+.section-about {
+  height: 95vh;
+  max-width: 1920px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 90px;
+  padding: 0 60px; }
+  .section-about .left-part {
+    position: relative; }
+    .section-about .left-part .square {
+      height: 520px;
+      width: 359px;
+      background-color: #212121;
+      position: absolute;
+      left: 247px;
+      top: 120px;
+      transform: translate(-50%, -50%); }
+      .section-about .left-part .square .text-on-square {
+        position: absolute;
+        bottom: 30px;
+        left: 30px; }
+        .section-about .left-part .square .text-on-square p {
+          height: 25px;
+          width: 285px;
+          opacity: 0.5;
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: italic;
+          letter-spacing: 0;
+          line-height: 25px; }
+    .section-about .left-part .car {
+      background-image: url(/Assets/Images/about-us-section.png);
+      background-size: cover;
+      background-position: top;
+      max-height: 270px;
+      max-width: 552px;
+      position: relative;
+      z-index: 1; }
+  .section-about .right-part {
+    max-height: 395px;
+    max-width: 458px; }
+    .section-about .right-part .about {
+      height: 14px;
+      color: #FA2A2A;
+      font-family: "Roboto Condensed";
+      font-size: 12px;
+      letter-spacing: 5px;
+      line-height: 14px;
+      margin-bottom: 15px; }
+    .section-about .right-part .welcome {
+      color: #212121;
+      font-family: Montserrat;
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 47px;
+      margin-bottom: 40px; }
+    .section-about .right-part .with {
+      color: #212121;
+      font-family: Montserrat;
+      font-size: 20px;
+      letter-spacing: 0;
+      line-height: 30px;
+      margin-bottom: 20px; }
+    .section-about .right-part .radiator {
+      color: #4E4E4E;
+      font-family: Montserrat;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 25px; }
+
+@media only screen and (max-width: 1120px) {
+  .section-about {
+    height: 70vh;
+    gap: 30px; }
+    .section-about .left-part .square {
+      height: 400px;
+      width: 255px;
+      left: 175px;
+      top: 100px; }
+      .section-about .left-part .square .text-on-square {
+        left: 3px;
+        text-align: center; }
+        .section-about .left-part .square .text-on-square p {
+          width: auto; }
+    .section-about .left-part .car {
+      max-height: 190px; }
+    .section-about .right-part {
+      max-height: 395px;
+      max-width: 458px; }
+      .section-about .right-part .about {
+        height: 12px;
+        font-size: 10px;
+        letter-spacing: 4px;
+        line-height: 12px;
+        margin-bottom: 13px; }
+      .section-about .right-part .welcome {
+        font-size: 36px;
+        line-height: 45px;
+        margin-bottom: 38px; }
+      .section-about .right-part .with {
+        font-size: 18px;
+        line-height: 28px;
+        margin-bottom: 18px; }
+      .section-about .right-part .radiator {
+        font-size: 14px;
+        line-height: 23px; } }
+
+@media only screen and (max-width: 870px) {
+  .section-about {
+    padding: 0 30px; }
+    .section-about .right-part {
+      max-height: 395px;
+      max-width: 458px; }
+      .section-about .right-part .about {
+        height: 12px;
+        font-size: 11px;
+        letter-spacing: 4px;
+        line-height: 12px;
+        margin-bottom: 10px; }
+      .section-about .right-part .welcome {
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 30px; }
+      .section-about .right-part .with {
+        font-size: 15px;
+        line-height: 22px;
+        margin-bottom: 12px; }
+      .section-about .right-part .radiator {
+        font-size: 11px;
+        line-height: 18px; } }
+
+@media only screen and (max-width: 700px) {
+  .section-about {
+    padding: 0 20px;
+    gap: 5px; }
+    .section-about .left-part .car {
+      max-height: 160px; }
+    .section-about .right-part .welcome {
+      font-size: 20px;
+      line-height: 34px;
+      margin-bottom: 26px; }
+    .section-about .right-part .with {
+      font-size: 12px;
+      line-height: 19px;
+      margin-bottom: 10px; }
+    .section-about .right-part .radiator {
+      font-size: 10px;
+      line-height: 16px; } }
+
+@media only screen and (max-width: 530px) {
+  .section-about {
+    padding: 0 2px;
+    gap: 2px; }
+    .section-about .left-part .car {
+      max-height: 120px; }
+    .section-about .left-part .square {
+      height: 350px;
+      width: 200px;
+      left: 120px;
+      top: 60px; }
+    .section-about .right-part .welcome {
+      font-size: 14px;
+      line-height: 28px;
+      margin-bottom: 26px; }
+    .section-about .right-part .with {
+      font-size: 9px;
+      line-height: 12px;
+      margin-bottom: 8px; }
+    .section-about .right-part .radiator {
+      font-size: 8px;
+      line-height: 12px; } }
+
+@media only screen and (max-width: 360px) {
+  .section-about .right-part .about {
+    height: 10px;
+    font-size: 8px;
+    letter-spacing: 2px;
+    line-height: 10px; }
+  .section-about .right-part .welcome {
+    font-size: 12px;
+    line-height: 22px;
+    margin-bottom: 20px; }
+  .section-about .right-part .with {
+    font-size: 7px;
+    line-height: 10px;
+    margin-bottom: 8px; }
+  .section-about .right-part .radiator {
+    font-size: 6px;
+    line-height: 12px; } }
+
+.section-featured {
+  max-height: 540px;
+  padding: 0 150px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  background-image: linear-gradient(270deg, rgba(0, 0, 0, 0) 0%, #000000 100%), url(/Assets/Images/section-banner-1920.jpg);
+  background-size: cover;
+  background-position: center;
+  max-height: 540px;
+  height: 540px;
+  max-width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: baseline; }
+  .section-featured .text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 329px;
+    width: 555px; }
+    .section-featured .text-box .featured {
+      height: 14px;
+      width: 91px;
+      color: #FA2A2A;
+      font-family: "Roboto Condensed";
+      font-size: 12px;
+      letter-spacing: 5px;
+      line-height: 14px;
+      margin-bottom: 10px; }
+    .section-featured .text-box .brand {
+      height: 47px;
+      width: 527px;
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 47px;
+      margin-bottom: 20px; }
+    .section-featured .text-box .rsq8 {
+      height: 52px;
+      width: 527px;
+      color: #CCC5C5;
+      font-family: Montserrat;
+      font-size: 14px;
+      letter-spacing: 0;
+      line-height: 26px;
+      margin-bottom: 40px; }
+    .section-featured .text-box .squares {
+      display: flex;
+      align-items: center;
+      justify-content: space-between; }
+      .section-featured .text-box .squares .square {
+        box-sizing: border-box;
+        height: 147px;
+        width: 166px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.15);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around; }
+        .section-featured .text-box .squares .square .performans {
+          height: 14px;
+          color: #fff;
+          font-family: "Roboto Condensed";
+          font-size: 12px;
+          letter-spacing: 3px;
+          line-height: 14px; }
+        .section-featured .text-box .squares .square .numbers {
+          height: 34px;
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 28px;
+          font-weight: 600;
+          letter-spacing: 0;
+          line-height: 34px; }
+        .section-featured .text-box .squares .square .unit {
+          height: 18px;
+          color: #fff;
+          font-family: Montserrat;
+          font-size: 14px;
+          font-style: italic;
+          letter-spacing: 0;
+          line-height: 18px; }
+
+@media only screen and (max-width: 750px) {
+  .section-featured {
+    padding: 0 20px; }
+    .section-featured .text-box {
+      width: auto; }
+      .section-featured .text-box .brand {
+        font-size: 30px;
+        width: 416px; }
+      .section-featured .text-box .rsq8 {
+        font-size: 12px;
+        width: 416px; }
+      .section-featured .text-box .squares {
+        justify-content: unset;
+        gap: 10px; }
+        .section-featured .text-box .squares .square {
+          height: 117px;
+          width: 136px; }
+          .section-featured .text-box .squares .square .numbers {
+            font-size: 24px; }
+          .section-featured .text-box .squares .square .performans {
+            font-size: 10px; }
+          .section-featured .text-box .squares .square .unit {
+            font-size: 12px; } }
+
+@media only screen and (max-width: 480px) {
+  .section-featured {
+    padding: 0 20px; }
+    .section-featured .text-box {
+      width: auto; }
+      .section-featured .text-box .brand {
+        font-size: 20px;
+        width: 300px;
+        margin-bottom: 40px; }
+      .section-featured .text-box .rsq8 {
+        font-size: 9px;
+        width: 300px; }
+      .section-featured .text-box .squares {
+        justify-content: unset;
+        gap: 10px; }
+        .section-featured .text-box .squares .square {
+          height: 97px;
+          width: 116px; }
+          .section-featured .text-box .squares .square .numbers {
+            font-size: 20px; }
+          .section-featured .text-box .squares .square .performans {
+            font-size: 9px; }
+          .section-featured .text-box .squares .square .unit {
+            font-size: 10px; } }
+
+@media only screen and (max-width: 430px) {
+  .section-featured .text-box .brand {
+    font-size: 20px;
+    width: 300px;
+    margin-bottom: 0px; }
+  .section-featured .text-box .squares {
+    flex-direction: column;
+    align-items: center; } }
+
+@media only screen and (max-width: 360px) {
+  .section-featured .text-box .brand {
+    font-size: 18px;
+    width: 220px;
+    margin-bottom: 0px;
+    line-height: 30px;
+    margin-bottom: 10px; }
+  .section-featured .text-box .rsq8 {
+    font-size: 9px;
+    width: 220px;
+    line-height: 18px; } }
+
+.section-catalog {
+  max-height: 540px;
+  padding: 0 150px;
+  background-color: #fff;
+  max-width: 1920px;
+  margin-bottom: 80px; }
+  .section-catalog .heading {
+    text-align: center;
+    height: 47px;
+    color: #212121;
+    font-family: Montserrat;
+    font-size: 38px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 47px;
+    margin: 80px 0 60px 0; }
+  .section-catalog .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 30px; }
+    .section-catalog .navigation li {
+      list-style-type: none;
+      position: relative; }
+      .section-catalog .navigation li a {
+        text-decoration: none;
+        height: 20px;
+        width: 85px;
+        color: #929AAD;
+        font-family: Montserrat;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 20px; }
+        .section-catalog .navigation li a:hover {
+          color: #212121; }
+      .section-catalog .navigation li::after {
+        content: '';
+        position: absolute;
+        height: 1px;
+        left: -8px;
+        bottom: -12px;
+        width: 0%;
+        background: #FA2A2A;
+        transition: width .2s; }
+      .section-catalog .navigation li:hover::after {
+        width: 100%;
+        padding: 0 8px;
+        color: #212121; }
+  .section-catalog .all-cars {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 29px; }
+    .section-catalog .all-cars .one-by-one {
+      box-sizing: border-box;
+      height: 400px;
+      width: 263px;
+      border: 1px solid #F3F3F5;
+      border-radius: 3px;
+      background-color: #FFFFFF;
+      box-shadow: 0 15px 25px -20px rgba(0, 0, 0, 0.1); }
+      .section-catalog .all-cars .one-by-one:hover {
+        transform: translateY(-2px) scale(1.03);
+        border: 1px solid #FA2A2A;
+        transition: all .2s; }
+      .section-catalog .all-cars .one-by-one .photo {
+        margin-top: 20px;
+        background-image: url(/Assets/Product-Images/product-card-audi-q3.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100px; }
+        .section-catalog .all-cars .one-by-one .photo_1 {
+          background-image: url(/Assets/Product-Images/product-card-audi-a4.png); }
+        .section-catalog .all-cars .one-by-one .photo_2 {
+          background-image: url(/Assets/Product-Images/product-card-audi-a3.png); }
+        .section-catalog .all-cars .one-by-one .photo_3 {
+          background-image: url(/Assets/Product-Images/product-card-audi-q7.png); }
+      .section-catalog .all-cars .one-by-one .seats {
+        height: 18px;
+        color: #929AAD;
+        font-family: Montserrat;
+        font-size: 14px;
+        letter-spacing: 0;
+        line-height: 18px;
+        margin-bottom: 5px;
+        text-align: center; }
+      .section-catalog .all-cars .one-by-one .car-name {
+        height: 30px;
+        color: #212121;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 30px;
+        margin-bottom: 5px;
+        text-align: center; }
+      .section-catalog .all-cars .one-by-one .configurator {
+        height: 20px;
+        color: #2A6EFA;
+        font-family: Montserrat;
+        font-size: 12px;
+        letter-spacing: -0.5px;
+        line-height: 20px;
+        margin-bottom: 15px;
+        text-align: center; }
+      .section-catalog .all-cars .one-by-one .check-and-text {
+        margin-left: 20px;
+        margin-bottom: 20px;
+        height: 90px;
+        color: #929AAD;
+        font-family: Montserrat;
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 30px; }
+        .section-catalog .all-cars .one-by-one .check-and-text p .icon-basic-star {
+          margin-right: 9px;
+          color: #2A6EFA; }
+      .section-catalog .all-cars .one-by-one .bottom {
+        margin: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .section-catalog .all-cars .one-by-one .bottom button {
+          border: none;
+          height: 34px;
+          width: 80px;
+          border-radius: 17px;
+          background-color: rgba(250, 42, 42, 0.1);
+          color: #FA2A2A;
+          font-family: "Roboto Condensed";
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 16px; }
+      .section-catalog .all-cars .one-by-one .wrapper .starting {
+        height: 13px;
+        width: 68px;
+        color: #929AAD;
+        font-family: "Roboto Condensed";
+        font-size: 13px;
+        letter-spacing: 0;
+        line-height: 13px;
+        margin-bottom: 2px; }
+      .section-catalog .all-cars .one-by-one .wrapper .price {
+        height: 30px;
+        width: 92px;
+        color: #212121;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 30px; }
+
+@media only screen and (max-width: 1440px) {
+  .section-catalog {
+    padding: 0 70px; } }
+
+@media only screen and (max-width: 1020px) {
+  .section-catalog {
+    max-height: none; }
+    .section-catalog .navigation {
+      gap: 40px; }
+    .section-catalog .heading {
+      font-size: 32px;
+      margin: 70px 0 50px 0; }
+    .section-catalog .two-col {
+      display: grid;
+      grid-template-columns: 263px 263px;
+      grid-row: auto auto;
+      grid-column-gap: 20px;
+      grid-row-gap: 20px; } }
+
+@media only screen and (max-width: 750px) {
+  .section-catalog {
+    padding: 0px 20px; }
+    .section-catalog .navigation {
+      gap: 20px; }
+    .section-catalog .heading {
+      font-size: 26px; } }
+
+@media only screen and (max-width: 580px) {
+  .section-catalog .navigation {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: 90px 90px 90px;
+    justify-items: center; }
+    .section-catalog .navigation li a {
+      font-size: 12px; }
+  .section-catalog .heading {
+    font-size: 22px;
+    margin: 70px 0 50px 0; }
+  .section-catalog .four-col {
+    display: grid;
+    grid-template-columns: 263px;
+    grid-row: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px; } }
+
+@media only screen and (max-width: 490px) {
+  .section-catalog .heading {
+    font-size: 16px;
+    margin: 50px 0 50px 0; } }
+
+.section-contact-us {
+  max-height: 760px;
+  padding: 90px 150px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 130px;
+  background: linear-gradient(135deg, #282A2F 0%, #000000 100%);
+  max-width: 1920px;
+  display: flex;
+  align-items: flex-start;
+  background-size: inherit;
+  background-repeat: no-repeat;
+  background-position: left bottom; }
+  .section-contact-us .car-wraper {
+    position: relative; }
+    .section-contact-us .car-wraper .car-img {
+      position: absolute;
+      height: 444px;
+      width: 1074px;
+      background-image: url(/Assets/Images/contact-form-img.png);
+      left: -895px;
+      top: 190px; }
+  .section-contact-us .text-box {
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    height: 329px;
+    width: 555px; }
+    .section-contact-us .text-box .contact {
+      height: 14px;
+      color: #FA2A2A;
+      font-family: "Roboto Condensed";
+      font-size: 12px;
+      letter-spacing: 5px;
+      line-height: 14px;
+      margin-bottom: 15px; }
+    .section-contact-us .text-box .brand {
+      height: 47px;
+      max-width: 570px;
+      color: #fff;
+      font-family: Montserrat;
+      font-size: 38px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 47px;
+      margin-bottom: 20px; }
+  .section-contact-us .cont .form {
+    height: 520px;
+    width: 458px;
+    background-color: #011F05;
+    padding: 52px 46px; }
+    .section-contact-us .cont .form .form_group {
+      text-align: center; }
+      .section-contact-us .cont .form .form_group .form_input {
+        box-sizing: border-box;
+        height: 60px;
+        width: 361px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        border-radius: 3px;
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-bottom: 30px;
+        padding-left: 15px; }
+      .section-contact-us .cont .form .form_group .form_input_big {
+        box-sizing: border-box;
+        height: 150px;
+        width: 361px;
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        background-color: rgba(255, 255, 255, 0.15);
+        margin-bottom: 30px;
+        padding-left: 15px;
+        padding-bottom: 90px; }
+      .section-contact-us .cont .form .form_group .imput-btn {
+        box-sizing: border-box;
+        height: 56px;
+        width: 125px;
+        border: 2px solid #FFFFFF;
+        opacity: 0.3;
+        border-radius: 3px; }
+
+@media only screen and (max-width: 1440px) {
+  .section-contact-us {
+    gap: 50px; }
+    .section-contact-us .car-img {
+      left: -300px; } }
+
+@media only screen and (max-width: 1180px) {
+  .section-contact-us {
+    padding: 90px 70px;
+    gap: 0; }
+    .section-contact-us .car-img {
+      scale: .7; }
+    .section-contact-us .cont .form {
+      width: 400px; }
+      .section-contact-us .cont .form .form_group .form_input,
+      .section-contact-us .cont .form .form_group .form_input_big {
+        width: 300px; } }
+
+@media only screen and (max-width: 860px) {
+  .section-contact-us {
+    padding: 60px 20px; }
+    .section-contact-us .text-box .brand {
+      font-size: 30px;
+      line-height: 42px; }
+    .section-contact-us .car-wraper .car-img {
+      scale: .5;
+      left: -740px; }
+    .section-contact-us .cont .form {
+      width: 340px; }
+      .section-contact-us .cont .form .form_group .form_input,
+      .section-contact-us .cont .form .form_group .form_input_big {
+        width: 230px; } }
+
+@media only screen and (max-width: 600px) {
+  .section-contact-us .text-box .brand {
+    font-size: 22px;
+    line-height: 32px; }
+  .section-contact-us .cont .form {
+    width: 220px;
+    padding: 52px 0; }
+    .section-contact-us .cont .form .form_group .form_input,
+    .section-contact-us .cont .form .form_group .form_input_big {
+      width: 170px; } }
+
+@media only screen and (max-width: 430px) {
+  .section-contact-us .text-box .brand {
+    font-size: 16px;
+    line-height: 26px; }
+  .section-contact-us .cont .form {
+    width: 180px;
+    padding: 46px 0; }
+    .section-contact-us .cont .form .form_group .form_input,
+    .section-contact-us .cont .form .form_group .form_input_big {
+      width: 150px;
+      padding-left: 5px; } }
+
+.section-footer {
+  background: linear-gradient(135deg, #15161a 0%, #000000 100%);
+  padding: 10px 150px 42px 150px;
+  margin-top: -1px; }
+  .section-footer .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .section-footer .wrapper a {
+      text-decoration: none;
+      height: 16px;
+      width: 233px;
+      opacity: 0.5;
+      color: #FFFFFF;
+      font-family: "Roboto Condensed";
+      font-size: 14px;
+      letter-spacing: 1px;
+      line-height: 16px; }
+    .section-footer .wrapper .right-side .marg {
+      margin-right: 30px; }
+
+@media only screen and (max-width: 860px) {
+  .section-footer {
+    padding: 10px 30px 30px 30px; } }
+
+@media only screen and (max-width: 600px) {
+  .section-footer .wrapper a {
+    font-size: 9px;
+    letter-spacing: .4px; }
+  .section-footer .wrapper .right-side .marg {
+    margin-right: 15px; } }
+
+@media only screen and (max-width: 450px) {
+  .section-footer {
+    padding: 10px 20px 30px 20px; }
+    .section-footer .wrapper a {
+      font-size: 8px;
+      letter-spacing: .3px; }
+    .section-footer .wrapper .right-side .marg {
+      margin-right: 10px; } }
